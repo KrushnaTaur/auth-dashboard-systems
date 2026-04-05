@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Activity Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Activity Tracker</h2>
+
+  <button onclick="addActivity('Logged In')">Simulate Login</button>
+  <button onclick="addActivity('Added Note')">Add Note</button>
+  <button onclick="addActivity('Uploaded File')">Upload File</button>
+
+  <h3>Activity Log</h3>
+  <ul id="activityList"></ul>
+
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

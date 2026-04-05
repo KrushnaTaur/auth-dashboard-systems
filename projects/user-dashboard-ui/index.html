@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard UI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>MyApp</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Users</li>
+      <li>Tasks</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <h3>Dashboard</h3>
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+      <div class="card">
+        <h4>Users</h4>
+        <p id="users">120</p>
+      </div>
+      <div class="card">
+        <h4>Revenue</h4>
+        <p>$5,400</p>
+      </div>
+      <div class="card">
+        <h4>Tasks</h4>
+        <p>32</p>
+      </div>
+    </div>
+
+    <!-- Chart -->
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <!-- Activity -->
+    <div class="activity">
+      <h3>Recent Activity</h3>
+      <ul id="activityList"></ul>
+    </div>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
